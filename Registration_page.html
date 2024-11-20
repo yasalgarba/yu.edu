@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form -University</title>
+    <link rel="icon" href="large_prev_ui.png">
+    <style>
+       body {
+            background-image: url(abstract-digital-grid-black-background_53876-97647.avif);
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            color: white;
+        }
+
+        .heading {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+
+            img {
+                width: 5%;
+                height: 5%;
+            }
+        }
+
+        .menu {
+            background-color: #f2f2f2;
+            padding: 10px;
+            :hover{color: blueviolet; :hover{color: blueviolet;} cursor: pointer;}
+        }
+
+        .menu a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bolder;
+            
+        }
+
+
+        .content {
+            
+            border: solid 1px white;
+            border-radius: 3px;
+            width: 300px;
+            height: 340px;
+            margin: auto;
+            background-color: rgba(0.5 0.5 0.5 500);
+            text-align: center;
+            color: white;
+
+            padding: 20px;
+           
+        }
+        input {
+            width: 170px;
+            height: 20px;
+            border: solid black 1px;
+            border-radius: 5px;
+        }
+        button {
+            font-weight: bold;
+            border-radius: 5px;
+            width: 70px;
+            height: 25px;
+            background-color: rgb(190, 190, 218);
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var name = document.forms["registrationForm"]["name"].value;
+            var programme = document.forms["registrationForm" || "programme"].value;
+            2914
+            var serialNumber = document.forms["registrationForm"]["serialNumber"].value;
+            if (name == "" || programme == "" || serialNumber == "") {
+                alert("All fields must be filled out");
+                return false;
+            } return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>University of Yasal</h1>
+        <img src="large_prev_ui.png" alt="University Logo">
+    </div>
+    <div class="menu">
+        <a href="Home_page.html">Home</a>
+        <a href="Programme_wise_studets_list_page.html" target="_top">Programme-wise Student List</a>
+        <a href="Registration_page.html">Student Registration Form</a>
+        <a href="Student Loging.html">Student Login</a>
+        <a href="Feedback_Page.html">Feedback Form</a>
+    </div> <br>
+    <div class="content">
+        <h2>Student Registration Form</h2>
+        <form name="registration Form" onsubmit="return validateForm()" action="Student Loging.html">
+            <label for="' name">Name of the Student:</label><br>
+            <input type="text" id="name" name="name" placeholder="Write your name here"><br><br>
+            <label for="programme">Programme:</label><br>
+            <input type="text" id="programme" name="programme" placeholder="Write your programme here"><br>
+            <br> <label for="serialNumber">Serial Number in the List:</label><br>
+            <input type="text" id="'serialNumber" name="serialNumber" placeholder="Write your serial number here">
+            <br><br>
+            <label for="pswd">Password:</label> <br>
+            <input type="password" placeholder="write your password here">
+            <br><br>
+            <label for="cpswd"> Confirm Password:</label> <br>
+            <input type="password" placeholder="Re-write your password here">
+            <br><br>
+            <footer>
+                <button> <a href="Student Loging.html">Submit</a></button>
+            </footer>
+        </form>
+    </div>
+</body>
+
+</html>
